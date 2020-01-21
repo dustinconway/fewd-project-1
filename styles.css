@@ -15,7 +15,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 14px;
 }
 a:hover {
   color: #6633ff;
@@ -25,10 +28,10 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
   min-height: 30px;
   padding: 10px;
   position: fixed;
+  background-color: #f7f5f0;
   text-align: center;
 }
 .nav {
@@ -43,21 +46,40 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+.nav-font   {
+  color: rgb(0, 0, 0);
+  text-decoration: uppercase;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
+  color: rgb(0, 0, 0);
 }
 .nav a {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: rgb(204, 204, 204)
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/main-background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.experience-header {
+  text-align: center;
+  background: url('images/experience-background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.contact-header {
+  text-align: center;
+  background: url('images/contact-background2.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,27 +91,34 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .25s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: rotate(360deg)
+}
+header .header-title-text   {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-transform: uppercase;
+  font-size: 45px;
+  letter-spacing: 20px;
 }
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 0px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #efefef;
+  color: black;
 }
 .card {
-  margin: 30px;
+  margin: 20px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -98,10 +127,35 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+.contact-card {
+  margin: 20px;
+  padding: 80px 80px 80px 80px;
+  max-width: 1000px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
 }
-
+.experience-card {
+  margin: 20px;
+  padding: 20px 40px 40px;
+  max-width: 2500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.card:hover {
+  border-color: #000000;
+}
+.experience-card:hover {
+  border-color: #000000;
+}
+.contact-card:hover {
+  border-color: #000000;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -151,9 +205,6 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
@@ -178,6 +229,15 @@ a.social:hover {
       justify-content: space-around;
       margin: 0 auto;
   }
+
+  .float {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: float; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+}
 
   header {
     min-height: 470px;
@@ -204,4 +264,44 @@ a.social:hover {
   }
 
 }
-
+h2  {
+    font-size:25px;
+    color: rgb(63, 63, 63);
+    text-align: center; 
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+h3  {
+  font-size:20px;
+  color: rgb(63, 63, 63);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h4  {
+  font-size:15px;
+  color: rgb(63, 63, 63);
+  letter-spacing: 2px;
+}
+h5  {
+  font-size:12px;
+  color: rgb(63, 63, 63);
+  letter-spacing: 2px;
+}
+.point-font  {
+  color: rgb(63, 63, 63);
+  letter-spacing: 1px;
+}
+.experience-box   {
+  margin: 50px;
+}   
+P   {
+  color: rgb(63, 63, 63);
+  letter-spacing: 1px;
+}
+.goals-list  {
+  font-size:15px;
+  color: rgb(63, 63, 63);
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
