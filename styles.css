@@ -50,7 +50,7 @@ a:hover {
 }
 .nav-font   {
   color: rgb(0, 0, 0);
-  text-decoration: uppercase;
+  text-transform: uppercase;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -232,7 +232,6 @@ a.social:hover {
 
   .float {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: float; 
     max-width: 1200px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
